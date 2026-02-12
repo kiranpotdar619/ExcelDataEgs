@@ -64,6 +64,7 @@ public class ExcelData
        
        WebElement pass = driver.findElement(By.id("ap_password"));
        pass.sendKeys(password);
+       pass.getText();
        driver.findElement(By.id("signInSubmit")).click();
 
     }
